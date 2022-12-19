@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZOne</title>
+    <link rel="icon" href="faicon.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: orangered;
+        }
+        nav {
+            background-color: rgb(255, 97, 40);
+            display: grid;
+            place-items: center;
+        }
+        nav ul { 
+            list-style-type: none;
+        }
+        nav ul a {
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            color: #000;
+            transition: 0.2s ease-in;
+            font-size: 20px;
+        }
+        nav ul a:hover {
+            background-color: rgba(197, 64, 16, 0.692);
+            color: white;
+            border-radius: 5px;
+            
+        }
+        .items {
+            display: grid;
+            padding: 30px 20px;
+            grid-template-columns: repeat(3, 1fr);
+            size: 30px;
+            gap: 20px;
+            row-gap: 30px;
+        }
+        .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .item img:hover {
+            transform: scale(1.10);
+        }
+        .item h4 {
+            padding: 5px;
+            text-align: center;
+        }
+        .item button {
+            padding: 5px 30px;
+            border: none;
+            outline: none;
+            background-color:orangered;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            transition: 0.2s all;
+        }
+        .item button:hover {
+            transform: scale(1.08);        
+        }
+
+        @media screen and ( max-width: 1000px  ) {
+            .items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and ( max-width: 768px  ) {
+            .items {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Foodie Plaza</h1>
+    <nav>
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Order</li>
+            </a>
+            <a href="#">
+                <li>Near</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+        </ul>
+    </nav>
+    <section class="items">
+        <Div class="item">
+            <img src="pizza.jpg">
+            <h4>Pizza</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="Burger.jpg">
+            <h4>Burger</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="rools.jpg">
+            <h4>Rools</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="soup.jpg">
+            <h4>Soup</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="coffee.jpg">
+            <h4>Coffee</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="frenchfries.jpg">
+            <h4>French-Fries</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="Bottle.jpg">
+            <h4>Water-Bottle</h4>
+            <button>Order</button>
+        </Div>
+        <Div class="item">
+            <img src="Juice.jpg">
+            <h4>Juice</h4>
+            <button>Order</button>
+            </Div>
+            <Div class="item">
+                <img src="icecream.jpg">
+                <h4>Ice-Cream</h4>
+                <button>Order</button>
+    </section>
+
+</body>
+
+</html>
